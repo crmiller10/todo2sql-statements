@@ -2,7 +2,7 @@
 CREATE TABLE todos (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
-  details TEXT NULL,
+  details VARCHAR(500) NULL,
   priority INTEGER NOT NULL DEFAULT '1',
   created_at TIMESTAMP NOT NULL,
   completed_at TIMESTAMP NULL
