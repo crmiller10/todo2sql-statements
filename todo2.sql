@@ -43,7 +43,7 @@ SELECT * FROM todos WHERE completed_at IS NULL AND priority = 3;
 SELECT * FROM todos WHERE completed_at IS NULL ORDER BY priority asc;
 
 -- 4. Write a SELECT statement to find the number of todos by priority created in the last 30 (60) days.
--- *Note: I updated the 30 day interval to 60 days in order to account for the amount of time that has lapesed from when I initially created these todos and now.
+-- *Note: I updated the 30 day interval to 60 days in order to account for the amount of time that has lapsed from when I initially created these todos and now.
 SELECT * FROM todos WHERE created_at > CURRENT_DATE - INTERVAL 60 DAY ORDER BY priority asc;
 
 -- 5. Write a SELECT statement to find the next todo you should work on. This is the todo with the highest priority that was created first.
